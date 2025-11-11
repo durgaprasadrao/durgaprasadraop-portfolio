@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Durgaprasad Rao Palla | Portfolio</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    * {margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+    body {
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:#f1f5f9;
+      line-height:1.6;
+    }
+    header {
+      position:fixed;top:0;width:100%;
+      background:rgba(15,23,42,0.9);
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 40px;z-index:1000;backdrop-filter:blur(8px);
+    }
+    .logo {color:#38bdf8;font-weight:600;}
+    nav ul {display:flex;list-style:none;}
+    nav ul li {margin-left:25px;}
+    nav a {text-decoration:none;color:#f1f5f9;transition:color 0.3s;}
+    nav a:hover {color:#38bdf8;}
+    section {max-width:900px;margin:100px auto 60px;padding:20px;}
+    h2 {font-size:1.8rem;color:#38bdf8;margin-bottom:15px;}
+    h3 {color:#f1f5f9;margin-top:10px;}
+    p,li {color:#cbd5e1;}
+    ul {margin-left:20px;}
+    .profile-img {
+      width:180px;height:180px;border-radius:50%;
+      object-fit:cover;border:4px solid #38bdf8;
+      animation:float 3s ease-in-out infinite;
+    }
+    .hero-content {
+      display:flex;align-items:center;justify-content:center;
+      flex-wrap:wrap;text-align:center;gap:30px;
+    }
+    .hero-text {max-width:500px;}
+    .hero-text span {color:#38bdf8;}
+    .skills-grid {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:15px;
+    }
+    .skill-card {
+      background:#1e293b;padding:15px;text-align:center;
+      border-radius:10px;transition:transform 0.3s,background 0.3s;
+    }
+    .skill-card:hover {transform:translateY(-5px);background:#38bdf8;color:#0f172a;}
+    .project {
+      background:#1e293b;padding:20px;border-radius:10px;margin-bottom:15px;
+      transition:transform 0.3s;
+    }
+    .project:hover {transform:scale(1.02);}
+    footer {text-align:center;padding:20px;background:#1e293b;color:#cbd5e1;}
+    @keyframes float {0%,100%{transform:translateY(0px);}50%{transform:translateY(-10px);}}
+    .fade-in {opacity:0;transform:translateY(20px);transition:opacity 1s ease-out,transform 1s ease-out;}
+    .fade-in.visible {opacity:1;transform:translateY(0);}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Durgaprasad Rao Palla</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="fade-in">
+    <div class="hero-content">
+      <img src="C:\Users\Durgaprasad\Downloads\Durgaprasad_Image.jpeg" alt="Profile Photo" class="profile-img" />
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Durgaprasad Rao Palla</span></h2>
+        <p>
+          Creative professional with expertise in <strong>video editing, graphic & motion design</strong> and a background in <strong>software development, Java, and test automation</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>Objective</h2>
+    <p>
+      Creative professional with strong experience in video editing, graphic design, motion design, and poster designing.
+      Skilled in crafting visually engaging content and delivering high-quality designs.
+      Additionally, 3 years of experience as a Software Developer specializing in Java development and test automation.
+    </p>
+  </section>
+
+  <section id="experience" class="fade-in">
+    <h2>Experience</h2>
+    <h3>Associate Software Engineer | LC Solutions</h3>
+    <ul>
+      <li>Developed new application features and enhancements aligning with business goals.</li>
+      <li>Diagnosed and resolved software bugs, improving stability and issue resolution speed.</li>
+      <li>Built and maintained automation frameworks using Java and Selenium.</li>
+      <li>Executed automated test scripts ensuring UI functionality and reliability.</li>
+      <li>Performed backend data validation using MongoDB and optimized test processes.</li>
+    </ul>
+  </section>
+
+  <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <p><strong>National Institute of Technology Andhra Pradesh</strong><br />B.Tech - Computer Science and Engineering (2021–2025)</p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">🎬 Video Editing & Graphic Design</div>
+      <div class="skill-card">💻 Java, Servlets</div>
+      <div class="skill-card">⚙️ Selenium Framework</div>
+      <div class="skill-card">🗃️ MongoDB</div>
+      <div class="skill-card">🌐 HTML, CSS, JavaScript</div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🛒 ShopEase - E-commerce Web Application</h3>
+      <p>
+        A full-featured e-commerce platform built using <strong>Spring Boot, MongoDB, HTML, CSS, and JavaScript</strong>.
+        Provides seamless online shopping with product showcase, cart, and checkout features.
+      </p>
+    </div>
+    <div class="project">
+      <h3>🤖 Restaurant Chatbot</h3>
+      <p>
+        Console-based chatbot developed in <strong>Python</strong> for restaurant reservations and menu browsing.
+        Features emoji formatting and keyword-based interactions.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p><strong>📍 Hyderabad</strong></p>
+    <p>📞 7893993641</p>
+    <p>📧 <a href="mailto:durga.palla2k@gmail.com">durga.palla2k@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Durgaprasad Rao Palla | Designed with ❤️</p>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>
